@@ -1,0 +1,40 @@
+{
+    "name": "cartouche",
+    "version": "0.1.0",
+    "description": "A minimal node.js image service powered by Amazon S3.",
+    "homepage": "https://github.com/olivierlesnicki/cartouche",
+    "author": "Olivier Lesnicki (https://github.com/olivierlesnicki)",
+    "keywords": [
+        "image",
+        "service",
+        "AWS",
+        "S3",
+        "crop",
+        "resize",
+        "blur",
+        "node"
+    ],
+    "contributors": [
+        "Olivier Lesnicki (https://github.com/olivierlesnicki)"
+    ],
+    "bugs": {
+        "url": "http://github.com/olivierlesnicki/cartouche/issues"
+    },
+    "license": {
+        "type": "MIT",
+        "url": "http://github.com/olivierlesnicki/cartouche/raw/master/LICENSE"
+    },
+    "main": "cartouche.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/olivierlesnicki/cartouche.git"
+    },
+    "engines": {
+        "node": ">=0.10.21"
+    },
+    "dependencies": {
+        "couleur": "1.0.x"
+    },
+    "devDependencies": {},
+    "scripts": {}
+}
