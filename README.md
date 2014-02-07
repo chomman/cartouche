@@ -13,17 +13,17 @@ Quick Overview
 
 ###Usage
 
-Just get an [Amazon Simple Storage Service](http://aws.amazon.com/documentation/s3/) instance running and include cartouche in your node application.
+Just get an [Amazon Simple Storage Service](http://aws.amazon.com/documentation/s3/) instance running and include cartouche in your node application. Note: it might be wise to store your keys as environment variables.
 
 `````javascript
 var cartouche = require('cartouche')({
     key: '<AMAZON_S3_API_KEY>',
-    secret: '<AMAZON_S3_SECRET_KEY>',
+    secret: '<AMAZON_S3_SECRET>',
     bucket: '<AMAZON_S3_BUCKET>'	
 });
 `````
 
-It's then super simple to upload picture to your S3 bucket.
+It's then super simple to upload a picture to your S3 bucket:
 
 `````javascript
 var photo = cartouche('/path/to/image');
@@ -35,7 +35,9 @@ photo.save(function(err, photoData){
 
 ####Transformations
 
-Cartouche 
+You can define a set of transformations to be applied to your image before upload.
+
+#####Resize
 
 `````javascript
 var photo = cartouche('/path/to/image', {
