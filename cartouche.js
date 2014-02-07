@@ -17,5 +17,5 @@ var Cartouche = function(config) {
 };
 
 module.exports = function(config) {
-    return new Photo(config);
+    return new Cartouche(config);
 };
