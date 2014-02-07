@@ -13,7 +13,7 @@ Quick Overview
 
 ###Usage
 
-Just get an Amazon S3 bucket running and include cartouche in your node application to store your app pictures the simple way.
+Just get an [Amazon Simple Storage Service](http://aws.amazon.com/documentation/s3/) instance running and include cartouche in your node application.
 
 `````javascript
 var cartouche = require('cartouche')({
@@ -21,7 +21,11 @@ var cartouche = require('cartouche')({
     secret: '<AMAZON_S3_SECRET_KEY>',
     bucket: '<AMAZON_S3_BUCKET>'	
 });
+`````
 
+It's then super simple to upload picture to your S3 bucket.
+
+`````javascript
 var photo = cartouche('/path/to/image');
 
 photo.save(function(err, photoData){
