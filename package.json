@@ -1,6 +1,6 @@
 {
     "name": "cartouche",
-    "version": "0.1.0-2",
+    "version": "0.1.0-3",
     "description": "A minimal node.js image service powered by Amazon S3.",
     "homepage": "https://github.com/olivierlesnicki/cartouche",
     "author": "Olivier Lesnicki (https://github.com/olivierlesnicki)",
