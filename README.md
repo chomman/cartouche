@@ -29,7 +29,8 @@ It's then super simple to upload a picture to your S3 bucket:
 var photo = cartouche('/path/to/image');
 
 photo.save(function(err, photoData){
-	if(!err) console.log(photoData);
+	if(!err) console.log(photoData.url.original); 
+	// returns the picture's url
 });
 `````
 
@@ -37,17 +38,44 @@ photo.save(function(err, photoData){
 
 You can define a set of transformations that will be applied to your picture before it is uploaded.
 
-####Resize
-
 `````javascript
 var photo = cartouche('/path/to/image', {
 	resize: {
-		width: 200 // will resize the image to have a width of 200px before uploading it
+		width: 800 // will resize the image to have a width of 200px before uploading it
 	}
 });
 
 photo.save(function(err, photoData){
-	if(!err) console.log(photoData);
+	if(!err) console.log(photoData.url.original);
+	// returns the picture's url	
+});
+`````
+
+###Versions
+
+You can upload different version of the same picture. This is extremly useful to generate thumbnails.
+
+`````javascript
+var photo = cartouche('/path/to/image', {});
+
+photo.add({
+	name: "thumbnail",
+	resize: {
+		width: 200
+	}
+});
+
+photo.add({
+	name: "thumbnail@2x",
+	resize: {
+		width: 400
+	}
+});
+
+photo.save(function(err, photoData){
+	if(!err) console.log(photoData.url);
+	// returns an object with the urls of the
+	// original picture and the two thumbnails
 });
 `````
 
