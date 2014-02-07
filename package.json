@@ -33,7 +33,13 @@
         "node": ">=0.10.21"
     },
     "dependencies": {
-        "couleur": "1.0.x"
+        "couleur": "1.0.x",
+        "s3": "0.3.x",
+        "gm": "~1.14.x",
+        "q": "~1.0.x",
+        "node-uuid": "1.4.x",
+        "lodash": "2.4.x",
+        "temporary": "0.0.8"
     },
     "devDependencies": {},
     "scripts": {}
