@@ -33,14 +33,14 @@
     "node": ">=0.10.21"
   },
   "dependencies": {
-    "couleur": "1.0.x",
+    "couleur": "1.2.x",
     "s3": "0.3.x",
-    "gm": "~1.14.x",
-    "q": "~1.0.x",
+    "gm": "1.14.x",
+    "q": "1.0.x",
     "node-uuid": "1.4.x",
     "lodash": "2.4.x",
-    "temporary": "0.0.8",
-    "async": "~0.2.10"
+    "temporary": "0.0.x",
+    "async": "0.2.x"
   },
   "devDependencies": {},
   "scripts": {}
