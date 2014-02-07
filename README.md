@@ -33,11 +33,11 @@ photo.save(function(err, photoData){
 });
 `````
 
-####Transformations
+###Transformations
 
-You can define a set of transformations to be applied to your image before upload.
+You can define a set of transformations that will be applied to your picture before it is uploaded.
 
-#####Resize
+####Resize
 
 `````javascript
 var photo = cartouche('/path/to/image', {
